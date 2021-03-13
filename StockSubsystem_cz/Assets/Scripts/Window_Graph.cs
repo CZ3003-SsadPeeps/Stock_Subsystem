@@ -17,7 +17,7 @@ public class Window_Graph : MonoBehaviour
         labelTemplateY = graphContainer.Find("LabelTemplateY").GetComponent<RectTransform>();
 
         // change this value when the price changes
-        List<int> valueList = new List<int>() { 5, 95, 56, 45, 30, 22, 17, 15, 69, 40, 25 };
+        List<int> valueList = StockStore.SelectedStock.StockPriceHistory;
         ShowGraph(valueList);
     }
 
